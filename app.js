@@ -4,7 +4,7 @@ const app = express();
 
 const PORT = 3000;
 
-app.get('/', (req, res) ==> {
+app.get('/', (req, res) => {
 	res.json({
 		system: 'PHANTOM-01',
 		status: 'ONLINE',
@@ -13,7 +13,7 @@ app.get('/', (req, res) ==> {
 	});
 });
 
-app.get('/objetivos', (req, res) ==> {
+app.get('/objetivos', (req, res) => {
 	res.json([
 		{
 			name: 'Pedro Sánchez',
@@ -24,6 +24,6 @@ app.get('/objetivos', (req, res) ==> {
 	]);
 });
 
-app.listen(PORT, () ==> {
-	console.log(`Servidor iniciado en el puerto ${PORT}`);
+app.listen(PORT, () => {
+	console.log('Servidor iniciado en el puerto ${PORT}');
 });
