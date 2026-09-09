@@ -20,20 +20,17 @@ app.get('/objetivos', (req, res) => {
 			codename: 'OBJ-001',
 			status: 'MONITORED',
 			risklevel: 'HIGH'
+		},
+		{
+			name:'Isabel Díaz Ayuso',
+			codename: 'OBJ-002',
+			status:"MONITORED",
+			risklevel: 'HIGH'
+
 		}
 	]);
 });
 
-app.get('/objetivos', (req, res) => {
-	res.json([
-		{
-			name: 'Isabel Díaz Ayuso',
-			codename: 'OBJ-002',
-			status: 'MONITORED',
-			risklevel: 'HIGH'
-		}
-	]);
-});
 
 
 app.listen(PORT, () => {
