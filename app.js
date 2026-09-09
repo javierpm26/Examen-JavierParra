@@ -24,6 +24,18 @@ app.get('/objetivos', (req, res) => {
 	]);
 });
 
+app.get('/objetivos', (req, res) => {
+	res.json([
+		{
+			name: 'Isabel Díaz Ayuso',
+			codename: 'OBJ-002',
+			status: 'MONITORED',
+			risklevel: 'HIGH'
+		}
+	]);
+});
+
+
 app.listen(PORT, () => {
 	console.log('Servidor iniciado en el puerto ${PORT}');
 });
